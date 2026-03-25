@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Opalocus | Ethereal Digital Wellbeing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#e8e8e8",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#5d6260",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#a1d2b1",
+              "on-primary-container": "#77a688",
+              "on-surface": "#1a1c1c",
+              "inverse-on-surface": "#f0f1f1",
+              "on-error-container": "#93000a",
+              "primary-container": "#0b3b24",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-primary-fixed-variant": "#224f36",
+              "primary-fixed-dim": "#a1d2b1",
+              "background": "#f9f9f9",
+              "outline": "#717972",
+              "outline-variant": "#c1c9c0",
+              "on-primary-fixed": "#002111",
+              "on-tertiary-container": "#84a297",
+              "surface-container": "#eeeeee",
+              "surface-variant": "#e2e2e2",
+              "surface-container-highest": "#e2e2e2",
+              "on-tertiary-fixed-variant": "#314c43",
+              "on-secondary-fixed": "#181c1c",
+              "tertiary-container": "#1d3830",
+              "secondary-container": "#dadedc",
+              "surface-container-low": "#f3f3f4",
+              "surface-bright": "#f9f9f9",
+              "on-secondary-fixed-variant": "#434847",
+              "tertiary-fixed-dim": "#afcdc2",
+              "secondary-fixed": "#dfe3e1",
+              "inverse-surface": "#2f3131",
+              "primary-fixed": "#bdeecc",
+              "tertiary-fixed": "#cae9dd",
+              "on-tertiary-fixed": "#042019",
+              "secondary-fixed-dim": "#c3c7c6",
+              "secondary": "#5b5f5e",
+              "error-container": "#ffdad6",
+              "on-background": "#1a1c1c",
+              "primary": "#002413",
+              "tertiary": "#06231b",
+              "surface-dim": "#dadada",
+              "on-surface-variant": "#414943",
+              "surface": "#f9f9f9",
+              "surface-tint": "#3b674d",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mint-glow-orb {
+            background: radial-gradient(circle, rgba(209, 240, 228, 0.8) 0%, rgba(209, 240, 228, 0) 70%);
+            filter: blur(40px);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="text-on-surface selection:bg-tertiary-fixed selection:text-primary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,36,19,0.05)]">
+<nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#0B3B24] dark:text-[#D1F0E4]">Opalocus</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#0B3B24] dark:text-[#D1F0E4] font-semibold border-b-2 border-[#0B3B24] transition-all hover:scale-105" href="#">Accueil</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0B3B24] transition-all hover:scale-105" href="#">Articles</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="cursor-pointer active:scale-95 transition-all text-[#0B3B24] p-2 rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
+<!-- Hero Section -->
+<section class="relative flex flex-col items-center justify-center min-h-[614px] text-center mb-24">
+<!-- Focus Orb / Mint Glow -->
+<div class="absolute -z-10 w-[500px] h-[500px] mint-glow-orb opacity-60"></div>
+<div class="space-y-4 mb-8">
+<span class="text-label tracking-[0.2em] uppercase text-on-surface-variant font-medium text-xs">Aujourd'hui</span>
+<h1 class="text-7xl md:text-9xl font-bold tracking-tighter text-primary-container leading-none">02:45</h1>
+<p class="text-on-surface-variant text-lg md:text-xl font-light tracking-tight max-w-md mx-auto">
+                    Heures de concentration profonde sauvegardées aujourd'hui.
+                </p>
+</div>
+<button class="bg-primary-container text-on-primary px-10 py-5 rounded-full font-semibold text-lg shadow-xl shadow-primary/10 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="timer">timer</span>
+                Start Focus Session
+            </button>
+</section>
+<!-- Primary Content Area: Bento Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+<!-- Card 1: Today's Focus Quality -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-12">
+<div>
+<h3 class="text-2xl font-bold text-primary-container mb-2">Qualité de Focus</h3>
+<p class="text-on-surface-variant">Analyse de votre immersion quotidienne.</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase">+12% vs hier</span>
+</div>
+<!-- Bar Chart Visualization -->
+<div class="flex items-end justify-between h-48 gap-3 md:gap-6">
+<div class="w-full bg-surface-container-highest rounded-t-full h-1/3 hover:bg-on-primary-container transition-colors cursor-help"></div>
+<div class="w-full bg-surface-container-highest rounded-t-full h-2/3 hover:bg-on-primary-container transition-colors cursor-help"></div>
+<div class="w-full bg-surface-container-highest rounded-t-full h-1/2 hover:bg-on-primary-container transition-colors cursor-help"></div>
+<div class="w-full bg-on-primary-container rounded-t-full h-[95%] shadow-lg shadow-on-primary-container/20"></div>
+<div class="w-full bg-surface-container-highest rounded-t-full h-3/4 hover:bg-on-primary-container transition-colors cursor-help"></div>
+<div class="w-full bg-surface-container-highest rounded-t-full h-1/4 hover:bg-on-primary-container transition-colors cursor-help"></div>
+<div class="w-full bg-surface-container-highest rounded-t-full h-2/5 hover:bg-on-primary-container transition-colors cursor-help"></div>
+</div>
+<div class="flex justify-between mt-4 text-[10px] text-on-surface-variant/60 uppercase font-bold tracking-widest">
+<span>Lun</span><span>Mar</span><span>Mer</span><span class="text-primary-container font-black">Jeu</span><span>Ven</span><span>Sam</span><span>Dim</span>
+</div>
+</div>
+<!-- Card 2: Apps Blocked Statistics -->
+<div class="md:col-span-5 bg-surface-container-low rounded-xl p-10 flex flex-col shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-on-primary-container/20 text-6xl" data-icon="security_update_good">security_update_good</span>
+</div>
+<h3 class="text-2xl font-bold text-primary-container mb-2">Distractions</h3>
+<p class="text-on-surface-variant mb-10">Tentatives d'accès bloquées.</p>
+<div class="flex-grow flex flex-col justify-center space-y-6">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary-container" data-icon="social_leaderboard">social_leaderboard</span>
+</div>
+<div>
+<span class="block text-3xl font-bold text-primary-container">42</span>
+<span class="text-sm text-on-surface-variant">Réseaux sociaux</span>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary-container" data-icon="mail">mail</span>
+</div>
+<div>
+<span class="block text-3xl font-bold text-primary-container">18</span>
+<span class="text-sm text-on-surface-variant">Notifications mail</span>
+</div>
+</div>
+</div>
+<div class="mt-10 pt-8 border-t border-outline-variant/10">
+<button class="text-primary-container font-semibold flex items-center gap-2 hover:translate-x-1 transition-transform">
+                        Voir le détail complet
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Editorial Breath Image (Demonstrating Organic Fluidity) -->
+<div class="md:col-span-12 h-96 rounded-xl overflow-hidden relative shadow-sm mt-8">
+<img alt="Sanctuary" class="w-full h-full object-cover" data-alt="abstract close-up of soft green leaves with morning dew and soft ethereal sunlight bokeh in a serene forest setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbF_TankbqdXSzDMJV5h6xd4IskTuI9u3I49x_Kq2nNA8BGNTYouZuft2qb9tjxFn6H2znn2HB-PPLDVyx1AhTEx0pNimq2fNfqI2uMZHgPMO-w7DYwG1ff36MeWvpm61iODI6-mqTZPpQa2K0aiyIsWC__Rx26h21dhpJeA8MB2erg5TRo5n-TjUJWFZi_fyW6sJ7oiMgGpNXwl047u_Y1SbufaBxfVG53w8-gksaMKEqqeqX7i_UCGZkahc_M8teITGg61iOJ_Wu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex flex-col justify-end p-12">
+<h2 class="text-white text-4xl font-bold tracking-tight max-w-xl mb-4 leading-tight">Le calme est une compétence que l'on cultive chaque jour.</h2>
+<p class="text-white/80 text-lg max-w-lg">Découvrez nos nouveaux articles sur la neuroplasticité et le repos numérique.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-24 bg-[#F2F6F4] dark:bg-slate-900 transition-colors duration-200">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6 max-w-7xl mx-auto">
+<div class="text-sm font-['Inter'] tracking-wide uppercase opacity-70 text-[#0B3B24] dark:text-[#D1F0E4]">
+                © 2024 Opalocus. The Ethereal Sanctuary.
+            </div>
+<div class="flex gap-8">
+<a class="text-sm font-['Inter'] tracking-wide uppercase opacity-70 text-[#0B3B24] dark:text-[#D1F0E4] hover:opacity-100 transition-opacity hover:underline" href="#">Privacy</a>
+<a class="text-sm font-['Inter'] tracking-wide uppercase opacity-70 text-[#0B3B24] dark:text-[#D1F0E4] hover:opacity-100 transition-opacity hover:underline" href="#">Terms</a>
+<a class="text-sm font-['Inter'] tracking-wide uppercase opacity-70 text-[#0B3B24] dark:text-[#D1F0E4] hover:opacity-100 transition-opacity hover:underline" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>
